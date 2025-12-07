@@ -1,4 +1,3 @@
-// src/pages/ClinicDirectory.jsx
 import React from "react";
 
 const clinics = [

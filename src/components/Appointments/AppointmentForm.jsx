@@ -4,12 +4,12 @@ import { db } from "../../services/firebase";
 import { useAuth } from "../../context/AuthContext";
 
 export default function AppointmentForm() {
-  const { user, loading } = useAuth(); // added loading
+  const { user, loading } = useAuth(); 
   const [form, setForm] = useState({ clinic: "", specialty: "", date: "", time: "" });
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
 
-  if (loading) return <div>Loading...</div>; // safe fallback
+  if (loading) return <div>Loading...</div>; 
   if (!user) return <div>Please log in to schedule appointments.</div>;
 
   function handleChange(e) {

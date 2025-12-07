@@ -1,4 +1,3 @@
-// src/components/Referrals/ReferralForm.jsx
 import React, { useState } from "react";
 import { db } from "../../services/firebase";
 import { ref, push } from "firebase/database";

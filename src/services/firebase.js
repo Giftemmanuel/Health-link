@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getDatabase } from "firebase/database";   // ✅ REALTIME DATABASE
+import { getDatabase } from "firebase/database";   //  REALTIME DATABASE
 
 const firebaseConfig = {
   apiKey: "AIzaSyAnw9ViAQrGLqC3Bg8yWSEsvbSZL7X5Qds",
@@ -14,8 +14,8 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 
-// ✅ AUTH
+// AUTH
 export const auth = getAuth(app);
 
-// ✅ REALTIME DATABASE  ← IMPORTANT!
+// REALTIME DATABASE  ← IMPORTANT!
 export const db = getDatabase(app);
